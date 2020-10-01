@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+.incognita {
+    background-color: rgb(203, 223, 25);
+    color: blue;
+    font-weight: bold;
+}
+h3 {
+    background-color: rgb(139,69,19);
+    color: yellow;
+    border: solid black;
+}
+.clase {
+    font-style: italic;
+    border-bottom: 1px dotted green;
+}
+#id{
+    background-color: rgb(145, 119, 145);
+    color: white;
+    letter-spacing: 5px;
+}
+</style>
+</head>
+<body>
+<h1>Estilos: Trabajando con textos.</h1>
+<p><b><i>Parrafo sin estilos (no hacemos ningún uso de ninguna CSS): ese párrafo está en negrita y cursiva. También ha sido indentado para que no llegue a los bordes. Todo está realizado desde el panel de propiedades en las opciones HTML.</b></i></p> 
+<p class="incognita">Se aconseja el uso de estilos para el diseño de la página, aunque el HTML permite añadir atributos y otras posibilidades para el diseño la tendencia es que acabe utilizandose exclusivamente para los contenidos.</p>
+<p style = "background-color: pink;
+    color: blue;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-variant: small-caps;
+    text-decoration: underline;">Estilo En Linea (Afecta UnicamEnte A Este Elemento, Va Incorporado En La Etiqueta HTML)</p>
+<h3>Estilo para las etiquetas h3 (afecta a todas las etiquetas h3)</h3>
+<p class = "clase">Estilo para la clase .clase (se aplica a cualquier etiqueta cuya clase sea establecida a este tipo). Siempre empieza por un punto.</p>
+<h4 class = "clase">Esto es un texto en una etiqueta h4 pero le aplicamos la misma clase que al parrafo anterior->.clase</h4>
+<p id = "id">Estilo a un id (se aplica al elemento que este identificado con ese id) En una página cada id debe ser exclusivo de una sola etiqueta (lo que hemos hecho hecho en una página con un id repetido sería incorrecto)</p>
+<table style = "width:100%; border: 1px solid black">
+    <tr>
+        <td style = "border: 1px solid black"><h3>Texto en h3</h3></td>
+        <td class = "clase">Texto con .clase</td>
+        <td id = "id" style = "border: 1px solid black">Misma id</td>
+    </tr>
+</table>
+</body>
+</html>
